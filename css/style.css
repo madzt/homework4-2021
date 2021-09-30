@@ -53,10 +53,9 @@ body{
 h1{
   color: #c12258;
   font-size: 2em;
-  line-height: 2px;
+  line-height: 2em;
   text-align: center;
  
-
   /*Req 2*/
 }
 
@@ -67,7 +66,7 @@ p{
 
 a{
 font-size: 16px;  
-color:#C12258;
+color:#B21F50;
 text-decoration-style: wavy; 
 }
 
@@ -80,8 +79,6 @@ td{
 text-align: center; 
  padding: 10px; 
  border-top: 2px solid #000000;
- 
-  
 }
 
 
@@ -89,8 +86,8 @@ text-align: center;
   color: #FFFFFF;
   min-width: 125px;
   padding: 10px;
-  margin-bottom: auto;
-  margin-top: auto;
+  justify-content: center;
+  vertical-align: middle;
   text-transform: uppercase;
   background-color: #7e0825;
 
@@ -104,13 +101,10 @@ text-align: center;
 
 }
 
-tr:hover{
-  background-color: rgba(126, 8, 37, .25)
-}
-
-.td:hover{
+tbody tr:hover{
   background-color: rgba(126, 8, 37, .25);
 }
+
 
 
 table{
@@ -127,9 +121,19 @@ thead tr:first-child th:first-child{
   border-radius: 50px;
 } 
 
-thead tr:first-child th.col-head{
-
+thead tr:first-child th:first-child{
+  border-radius:50px;
 }
+thead tr:first-child th:last-child {
+  border-radius: 50px;
+}
+tbody tr:last-child th.rowhead {
+  border-radius: 50px;
+}
+tbody tr:last-child td:last-child {
+  border-radius: 50px;
+}
+
 tr:nth-child(odd){
   background-color: transparent;
 
@@ -145,7 +149,7 @@ tr:nth-child(even){
 
 
 footer{
-  position: absolute;
+  position: relative;
   width:100%;
   background:#000000;
   text-align:center;
