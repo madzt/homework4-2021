@@ -29,6 +29,7 @@ caption{
   /* src: url('/Users/madelinetrumbauer/Desktop/Senior\ Year/SI\339/HW/hw'); */
 
 *:focus{
+  border-width: 3px;
   border-color: #417243;
   border-style: dashed;
 
@@ -37,8 +38,8 @@ caption{
 body{
   color: #000000;
   font-family: Andika, sans-serif;
-  background-color: grey;
   background-image: url('../images/pigeon-background.JPEG'); 
+  background-color: #DDDDDD;
   background-repeat: no-repeat;
   background-position: center;
   font-size: 16px;
@@ -52,7 +53,7 @@ body{
 h1{
   color: #c12258;
   font-size: 2em;
-  line-height: 32px;
+  line-height: 2px;
   text-align: center;
  
 
@@ -121,17 +122,23 @@ table{
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-/* thead tr:first-child th:first-child{
-} */
 
-tr::nth-child(odd){
+thead tr:first-child th:first-child{
+  border-radius: 50px;
+} 
+
+thead tr:first-child th.col-head{
+
+}
+tr:nth-child(odd){
   background-color: transparent;
 
 }
 
 tr:nth-child(even){
-  background-color: #D1D1D1);
+  background-color: #D1D1D1;
 }
+
 
 /*Add selectors and rules here*/
 
